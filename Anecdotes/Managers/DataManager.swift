@@ -12,6 +12,8 @@ final class DataManager {
 	
 	static let shared = DataManager()
 	
+	private(set) var categories: [Category] = Array(repeating: Category(), count: 6)
+	
 	private func loadData() {
 		
 	}

@@ -42,6 +42,10 @@
 		85E57D0E23CBA014009E541C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D0D23CBA014009E541C /* NavigationController.swift */; };
 		85E57D1023CBA0C5009E541C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D0F23CBA0C5009E541C /* HomeViewController.swift */; };
 		85E57D1223CBA1BA009E541C /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D1123CBA1BA009E541C /* CategoriesViewController.swift */; };
+		85E57D1723CBAC04009E541C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D1623CBAC04009E541C /* Category.swift */; };
+		85E57D1923CBAC65009E541C /* Anecdote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D1823CBAC65009E541C /* Anecdote.swift */; };
+		85E57D1C23CBAE76009E541C /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E57D1A23CBAE76009E541C /* CategoryTableViewCell.xib */; };
+		85E57D1D23CBAE76009E541C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D1B23CBAE76009E541C /* CategoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +86,10 @@
 		85E57D0D23CBA014009E541C /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		85E57D0F23CBA0C5009E541C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		85E57D1123CBA1BA009E541C /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		85E57D1623CBAC04009E541C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		85E57D1823CBAC65009E541C /* Anecdote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anecdote.swift; sourceTree = "<group>"; };
+		85E57D1A23CBAE76009E541C /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		85E57D1B23CBAE76009E541C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,16 +122,17 @@
 		856E466C23CB8D6E005B1A3C /* Anecdotes */ = {
 			isa = PBXGroup;
 			children = (
-				85E57CE523CB9F61009E541C /* Extensions */,
-				85E57CDD23CB9F20009E541C /* Cells */,
-				85E57CD123CB9DD1009E541C /* Constants */,
-				85E57CCE23CB9D8D009E541C /* Managers */,
-				85E57CC523CB9C87009E541C /* ViewControllers */,
+				856E467B23CB8D70005B1A3C /* Info.plist */,
 				856E466D23CB8D6E005B1A3C /* AppDelegate.swift */,
 				856E466F23CB8D6E005B1A3C /* SceneDelegate.swift */,
 				856E467623CB8D70005B1A3C /* Assets.xcassets */,
+				85E57CDD23CB9F20009E541C /* Cells */,
+				85E57CD123CB9DD1009E541C /* Constants */,
+				85E57CE523CB9F61009E541C /* Extensions */,
 				856E467823CB8D70005B1A3C /* LaunchScreen.storyboard */,
-				856E467B23CB8D70005B1A3C /* Info.plist */,
+				85E57CCE23CB9D8D009E541C /* Managers */,
+				85E57D1523CBABDD009E541C /* Models */,
+				85E57CC523CB9C87009E541C /* ViewControllers */,
 			);
 			path = Anecdotes;
 			sourceTree = "<group>";
@@ -199,6 +208,8 @@
 			children = (
 				85E57CDF23CB9F3E009E541C /* DetailsTableViewCell.swift */,
 				85E57CE023CB9F3E009E541C /* DetailsTableViewCell.xib */,
+				85E57D1B23CBAE76009E541C /* CategoryTableViewCell.swift */,
+				85E57D1A23CBAE76009E541C /* CategoryTableViewCell.xib */,
 				85E57CE323CB9F44009E541C /* TableViewCell.swift */,
 			);
 			path = TableView;
@@ -282,6 +293,15 @@
 			path = Navigations;
 			sourceTree = "<group>";
 		};
+		85E57D1523CBABDD009E541C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85E57D1623CBAC04009E541C /* Category.swift */,
+				85E57D1823CBAC65009E541C /* Anecdote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -341,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85E57CE223CB9F3E009E541C /* DetailsTableViewCell.xib in Resources */,
+				85E57D1C23CBAE76009E541C /* CategoryTableViewCell.xib in Resources */,
 				85E57CCC23CB9CC5009E541C /* LoadingViewController.xib in Resources */,
 				856E467A23CB8D70005B1A3C /* LaunchScreen.storyboard in Resources */,
 				856E467723CB8D70005B1A3C /* Assets.xcassets in Resources */,
@@ -358,6 +379,7 @@
 				85E57CFF23CB9F61009E541C /* UIViewController+Extension.swift in Sources */,
 				85E57D0323CB9F61009E541C /* UITableView+Cells.swift in Sources */,
 				85E57CD823CB9EF8009E541C /* AboutUsViewController.swift in Sources */,
+				85E57D1723CBAC04009E541C /* Category.swift in Sources */,
 				85E57CFC23CB9F61009E541C /* UIView+Extension.swift in Sources */,
 				85E57CC923CB9CB0009E541C /* ViewController.swift in Sources */,
 				85E57D0E23CBA014009E541C /* NavigationController.swift in Sources */,
@@ -366,6 +388,7 @@
 				85E57D0823CB9F61009E541C /* Array+Elements.swift in Sources */,
 				85E57D0523CB9F61009E541C /* UIColor+Highlight.swift in Sources */,
 				85E57CFB23CB9F61009E541C /* UIStackView+Subviews.swift in Sources */,
+				85E57D1923CBAC65009E541C /* Anecdote.swift in Sources */,
 				856E466E23CB8D6E005B1A3C /* AppDelegate.swift in Sources */,
 				856E467023CB8D6E005B1A3C /* SceneDelegate.swift in Sources */,
 				85E57D0023CB9F61009E541C /* UIEdgeInsets+Inits.swift in Sources */,
@@ -374,6 +397,7 @@
 				85E57D0223CB9F61009E541C /* NSLayoutConstraint+Deactivate.swift in Sources */,
 				85E57CE423CB9F44009E541C /* TableViewCell.swift in Sources */,
 				85E57D0423CB9F61009E541C /* UITableView+Footer.swift in Sources */,
+				85E57D1D23CBAE76009E541C /* CategoryTableViewCell.swift in Sources */,
 				85E57CE123CB9F3E009E541C /* DetailsTableViewCell.swift in Sources */,
 				85E57D1023CBA0C5009E541C /* HomeViewController.swift in Sources */,
 				85E57D0923CB9F61009E541C /* String+Inits.swift in Sources */,
