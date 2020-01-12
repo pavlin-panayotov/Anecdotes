@@ -16,7 +16,7 @@ final class TabBarController: UITabBarController {
 		viewControllers = [
 			createController(),
 			createController(),
-			createController()
+			NavigationController(rootViewController: AboutUsViewController())
 		]
 	}
 	
