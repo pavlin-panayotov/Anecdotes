@@ -10,12 +10,12 @@ import Foundation
 
 final class Anecdote {
 
-	let creationDate: Date = .now
-	let author: String = "None"
 	let text: String = """
 На конкурс между мъже “Какво е смесено чувство” победил мъжът, който отговорил:
 - Това е, когато гледаш как твоята тъща лети в пропастта с твоята кола.
 """
+	let author: String = "Неизвестен"
+	let creationDate: Date = .now
 	let raiting: Double = 3.7
 	let raitingsCount: Int = 5
 	let isRated: Bool = false

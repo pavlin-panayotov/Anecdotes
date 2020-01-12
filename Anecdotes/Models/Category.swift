@@ -11,7 +11,7 @@ import Foundation
 final class Category {
 	
 	let anecdotes: [Anecdote] = Array(repeating: Anecdote(), count: 11)
-	let name: String = "Title"
+	let name: String = "Категория"
 	
 	init() {
 		

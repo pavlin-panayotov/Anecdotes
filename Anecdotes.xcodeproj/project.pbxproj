@@ -46,6 +46,10 @@
 		85E57D1923CBAC65009E541C /* Anecdote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D1823CBAC65009E541C /* Anecdote.swift */; };
 		85E57D1C23CBAE76009E541C /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E57D1A23CBAE76009E541C /* CategoryTableViewCell.xib */; };
 		85E57D1D23CBAE76009E541C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D1B23CBAE76009E541C /* CategoryTableViewCell.swift */; };
+		85E57D1F23CBB087009E541C /* AnecdotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D1E23CBB087009E541C /* AnecdotesViewController.swift */; };
+		85E57D2223CBB1CD009E541C /* AnecdoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D2023CBB1CD009E541C /* AnecdoteTableViewCell.swift */; };
+		85E57D2323CBB1CD009E541C /* AnecdoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E57D2123CBB1CD009E541C /* AnecdoteTableViewCell.xib */; };
+		85E57D2523CBB575009E541C /* DateFormatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D2423CBB575009E541C /* DateFormatterManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +94,10 @@
 		85E57D1823CBAC65009E541C /* Anecdote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anecdote.swift; sourceTree = "<group>"; };
 		85E57D1A23CBAE76009E541C /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		85E57D1B23CBAE76009E541C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		85E57D1E23CBB087009E541C /* AnecdotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnecdotesViewController.swift; sourceTree = "<group>"; };
+		85E57D2023CBB1CD009E541C /* AnecdoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnecdoteTableViewCell.swift; sourceTree = "<group>"; };
+		85E57D2123CBB1CD009E541C /* AnecdoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnecdoteTableViewCell.xib; sourceTree = "<group>"; };
+		85E57D2423CBB575009E541C /* DateFormatterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				85E57CD723CB9EF8009E541C /* AboutUsViewController.swift */,
+				85E57D1E23CBB087009E541C /* AnecdotesViewController.swift */,
 				85E57D1123CBA1BA009E541C /* CategoriesViewController.swift */,
 				85E57D0F23CBA0C5009E541C /* HomeViewController.swift */,
 				85E57CCB23CB9CC5009E541C /* LoadingViewController.swift */,
@@ -174,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				85E57CCF23CB9D9C009E541C /* DataManager.swift */,
+				85E57D2423CBB575009E541C /* DateFormatterManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -206,10 +216,12 @@
 		85E57CDE23CB9F2B009E541C /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				85E57CDF23CB9F3E009E541C /* DetailsTableViewCell.swift */,
-				85E57CE023CB9F3E009E541C /* DetailsTableViewCell.xib */,
+				85E57D2023CBB1CD009E541C /* AnecdoteTableViewCell.swift */,
+				85E57D2123CBB1CD009E541C /* AnecdoteTableViewCell.xib */,
 				85E57D1B23CBAE76009E541C /* CategoryTableViewCell.swift */,
 				85E57D1A23CBAE76009E541C /* CategoryTableViewCell.xib */,
+				85E57CDF23CB9F3E009E541C /* DetailsTableViewCell.swift */,
+				85E57CE023CB9F3E009E541C /* DetailsTableViewCell.xib */,
 				85E57CE323CB9F44009E541C /* TableViewCell.swift */,
 			);
 			path = TableView;
@@ -365,6 +377,7 @@
 				85E57CCC23CB9CC5009E541C /* LoadingViewController.xib in Resources */,
 				856E467A23CB8D70005B1A3C /* LaunchScreen.storyboard in Resources */,
 				856E467723CB8D70005B1A3C /* Assets.xcassets in Resources */,
+				85E57D2323CBB1CD009E541C /* AnecdoteTableViewCell.xib in Resources */,
 				85E57CDC23CB9F0A009E541C /* TableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +399,7 @@
 				85E57CD023CB9D9C009E541C /* DataManager.swift in Sources */,
 				85E57D0623CB9F61009E541C /* Date+Extension.swift in Sources */,
 				85E57D0823CB9F61009E541C /* Array+Elements.swift in Sources */,
+				85E57D2523CBB575009E541C /* DateFormatterManager.swift in Sources */,
 				85E57D0523CB9F61009E541C /* UIColor+Highlight.swift in Sources */,
 				85E57CFB23CB9F61009E541C /* UIStackView+Subviews.swift in Sources */,
 				85E57D1923CBAC65009E541C /* Anecdote.swift in Sources */,
@@ -402,6 +416,7 @@
 				85E57D1023CBA0C5009E541C /* HomeViewController.swift in Sources */,
 				85E57D0923CB9F61009E541C /* String+Inits.swift in Sources */,
 				85E57D0123CB9F61009E541C /* NSLayoutConstraint+Activate.swift in Sources */,
+				85E57D2223CBB1CD009E541C /* AnecdoteTableViewCell.swift in Sources */,
 				85E57D0B23CB9F89009E541C /* Constant.swift in Sources */,
 				85E57CFD23CB9F61009E541C /* UIView+Subviews.swift in Sources */,
 				85E57CCD23CB9CC5009E541C /* LoadingViewController.swift in Sources */,
@@ -409,6 +424,7 @@
 				85E57CDB23CB9F0A009E541C /* TableViewController.swift in Sources */,
 				85E57CD323CB9DE3009E541C /* Closures.swift in Sources */,
 				85E57D0723CB9F61009E541C /* RawRepresentable+Inits.swift in Sources */,
+				85E57D1F23CBB087009E541C /* AnecdotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

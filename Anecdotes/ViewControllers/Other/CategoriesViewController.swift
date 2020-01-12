@@ -61,9 +61,13 @@ final class CategoriesViewController: TableViewController {
 		
 		tableView.deselectRow(at: indexPath, animated: true)
 		
-		guard let categories = categories[safe: indexPath.row] else {
+		guard let category = categories[safe: indexPath.row] else {
 			return
 		}
 		
+		navigationController?.pushViewController(
+			AnecdotesViewController(anecdotes: category.anecdotes),
+			animated: true
+		)
 	}
 }
