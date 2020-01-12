@@ -35,37 +35,6 @@ final class AnecdotesViewController: TableViewController {
 		tableView.register(cellType: AnecdoteTableViewCell.self)
 	}
 	
-	// MARK: - Private
-	private func showRateSheetFor(anecdote: Anecdote) {
-		let actionSheet = UIAlertController(
-			title: "Избери оценка",
-			message: nil,
-			preferredStyle: .actionSheet
-		)
-		
-		(1...5).forEach { rating in
-			actionSheet.addAction(
-				UIAlertAction(
-					title: "\(rating)",
-					style: .default,
-					handler: { [weak self, weak anecdote] _ in
-						anecdote?.add(newRating: rating)
-						self?.tableView.reloadData()
-				})
-			)
-		}
-		
-		actionSheet.addAction(
-			UIAlertAction(
-				title: "Откажи",
-				style: .cancel,
-				handler: nil
-			)
-		)
-		
-		present(actionSheet, animated: true, completion: nil)
-	}
-	
 	// MARK: - UITableViewDataSource
 	override func tableView(
 		_ tableView: UITableView,
@@ -90,6 +59,7 @@ final class AnecdotesViewController: TableViewController {
 	}
 }
 
+// MARK: - AnecdoteTableViewCellDelegate
 extension AnecdotesViewController: AnecdoteTableViewCellDelegate {
 	func anecdoteTableViewCellDidTapRateButton(_ cell: AnecdoteTableViewCell) {
 		guard
@@ -99,6 +69,11 @@ extension AnecdotesViewController: AnecdoteTableViewCellDelegate {
 				return
 		}
 		
-		showRateSheetFor(anecdote: anecdote)
+		NavigationManager.shared.showRateSheetFor(
+			sender: self,
+			anecdote: anecdote,
+			completion: { [weak self] in
+				self?.tableView.reloadData()
+		})
 	}
 }

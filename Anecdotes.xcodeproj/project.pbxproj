@@ -50,6 +50,7 @@
 		85E57D2223CBB1CD009E541C /* AnecdoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D2023CBB1CD009E541C /* AnecdoteTableViewCell.swift */; };
 		85E57D2323CBB1CD009E541C /* AnecdoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E57D2123CBB1CD009E541C /* AnecdoteTableViewCell.xib */; };
 		85E57D2523CBB575009E541C /* DateFormatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D2423CBB575009E541C /* DateFormatterManager.swift */; };
+		85E57D2E23CBC724009E541C /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D2D23CBC724009E541C /* NavigationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		85E57D2023CBB1CD009E541C /* AnecdoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnecdoteTableViewCell.swift; sourceTree = "<group>"; };
 		85E57D2123CBB1CD009E541C /* AnecdoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnecdoteTableViewCell.xib; sourceTree = "<group>"; };
 		85E57D2423CBB575009E541C /* DateFormatterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterManager.swift; sourceTree = "<group>"; };
+		85E57D2D23CBC724009E541C /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			children = (
 				85E57CCF23CB9D9C009E541C /* DataManager.swift */,
 				85E57D2423CBB575009E541C /* DateFormatterManager.swift */,
+				85E57D2D23CBC724009E541C /* NavigationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E57D2E23CBC724009E541C /* NavigationManager.swift in Sources */,
 				85E57CFF23CB9F61009E541C /* UIViewController+Extension.swift in Sources */,
 				85E57D0323CB9F61009E541C /* UITableView+Cells.swift in Sources */,
 				85E57CD823CB9EF8009E541C /* AboutUsViewController.swift in Sources */,
