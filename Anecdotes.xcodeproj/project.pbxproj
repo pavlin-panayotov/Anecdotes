@@ -11,6 +11,9 @@
 		856E467023CB8D6E005B1A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E466F23CB8D6E005B1A3C /* SceneDelegate.swift */; };
 		856E467723CB8D70005B1A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856E467623CB8D70005B1A3C /* Assets.xcassets */; };
 		856E467A23CB8D70005B1A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856E467823CB8D70005B1A3C /* LaunchScreen.storyboard */; };
+		85E57CC923CB9CB0009E541C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57CC823CB9CB0009E541C /* ViewController.swift */; };
+		85E57CCC23CB9CC5009E541C /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E57CCA23CB9CC5009E541C /* LoadingViewController.xib */; };
+		85E57CCD23CB9CC5009E541C /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57CCB23CB9CC5009E541C /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		856E467623CB8D70005B1A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		856E467923CB8D70005B1A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		856E467B23CB8D70005B1A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85E57CC823CB9CB0009E541C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85E57CCA23CB9CC5009E541C /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		85E57CCB23CB9CC5009E541C /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		856E466C23CB8D6E005B1A3C /* Anecdotes */ = {
 			isa = PBXGroup;
 			children = (
+				85E57CC523CB9C87009E541C /* ViewControllers */,
 				856E466D23CB8D6E005B1A3C /* AppDelegate.swift */,
 				856E466F23CB8D6E005B1A3C /* SceneDelegate.swift */,
 				856E467623CB8D70005B1A3C /* Assets.xcassets */,
@@ -59,6 +66,32 @@
 				856E467B23CB8D70005B1A3C /* Info.plist */,
 			);
 			path = Anecdotes;
+			sourceTree = "<group>";
+		};
+		85E57CC523CB9C87009E541C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				85E57CC723CB9C9C009E541C /* Other */,
+				85E57CC623CB9C94009E541C /* Parents */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		85E57CC623CB9C94009E541C /* Parents */ = {
+			isa = PBXGroup;
+			children = (
+				85E57CC823CB9CB0009E541C /* ViewController.swift */,
+			);
+			path = Parents;
+			sourceTree = "<group>";
+		};
+		85E57CC723CB9C9C009E541C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				85E57CCB23CB9CC5009E541C /* LoadingViewController.swift */,
+				85E57CCA23CB9CC5009E541C /* LoadingViewController.xib */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E57CCC23CB9CC5009E541C /* LoadingViewController.xib in Resources */,
 				856E467A23CB8D70005B1A3C /* LaunchScreen.storyboard in Resources */,
 				856E467723CB8D70005B1A3C /* Assets.xcassets in Resources */,
 			);
@@ -131,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E57CC923CB9CB0009E541C /* ViewController.swift in Sources */,
 				856E466E23CB8D6E005B1A3C /* AppDelegate.swift in Sources */,
 				856E467023CB8D6E005B1A3C /* SceneDelegate.swift in Sources */,
+				85E57CCD23CB9CC5009E541C /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
