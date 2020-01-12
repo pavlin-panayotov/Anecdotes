@@ -40,6 +40,7 @@
 		85E57D0923CB9F61009E541C /* String+Inits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57CFA23CB9F61009E541C /* String+Inits.swift */; };
 		85E57D0B23CB9F89009E541C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D0A23CB9F89009E541C /* Constant.swift */; };
 		85E57D0E23CBA014009E541C /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D0D23CBA014009E541C /* NavigationController.swift */; };
+		85E57D1023CBA0C5009E541C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57D0F23CBA0C5009E541C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		85E57CFA23CB9F61009E541C /* String+Inits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Inits.swift"; sourceTree = "<group>"; };
 		85E57D0A23CB9F89009E541C /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		85E57D0D23CBA014009E541C /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		85E57D0F23CBA0C5009E541C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				85E57CD723CB9EF8009E541C /* AboutUsViewController.swift */,
 				85E57CCB23CB9CC5009E541C /* LoadingViewController.swift */,
 				85E57CCA23CB9CC5009E541C /* LoadingViewController.xib */,
+				85E57D0F23CBA0C5009E541C /* HomeViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				85E57CE423CB9F44009E541C /* TableViewCell.swift in Sources */,
 				85E57D0423CB9F61009E541C /* UITableView+Footer.swift in Sources */,
 				85E57CE123CB9F3E009E541C /* DetailsTableViewCell.swift in Sources */,
+				85E57D1023CBA0C5009E541C /* HomeViewController.swift in Sources */,
 				85E57D0923CB9F61009E541C /* String+Inits.swift in Sources */,
 				85E57D0123CB9F61009E541C /* NSLayoutConstraint+Activate.swift in Sources */,
 				85E57D0B23CB9F89009E541C /* Constant.swift in Sources */,
