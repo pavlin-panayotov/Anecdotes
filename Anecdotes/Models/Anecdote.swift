@@ -16,7 +16,25 @@ final class Anecdote {
 """
 	let author: String = "Неизвестен"
 	let creationDate: Date = .now
-	let raiting: Double = 3.7
-	let raitingsCount: Int = 5
-	let isRated: Bool = false
+	private(set) var rating: Double = 3.7
+	private(set) var ratingsCount: Int = 6
+	private var oldRating: Int? = 5
+	
+	var isRated: Bool {
+		return oldRating != nil
+	}
+	
+	// MARK: - Public
+	func add(newRating: Int) {
+		let oldRatingsCount = ratingsCount
+		
+		if isRated == false {
+			ratingsCount += 1
+		}
+		
+		let sumUpOldRatings = rating * Double(oldRatingsCount)
+		let ratingDifference = newRating - (oldRating ?? 0)
+		rating = (sumUpOldRatings + Double(ratingDifference)) / Double(ratingsCount)
+		oldRating = newRating
+	}
 }

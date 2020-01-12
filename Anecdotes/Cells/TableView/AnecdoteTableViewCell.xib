@@ -20,13 +20,13 @@
                         <rect key="frame" x="16" y="11" width="288" height="278"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6M-F1-sno">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="217"/>
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="142.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="80T-Ux-v5r">
-                                <rect key="frame" x="0.0" y="232" width="288" height="46"/>
+                                <rect key="frame" x="0.0" y="157.5" width="288" height="120.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfg-za-rYt">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
@@ -40,6 +40,22 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5y8-8o-uu1">
+                                        <rect key="frame" x="0.0" y="51" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWk-ya-Uyj">
+                                        <rect key="frame" x="0.0" y="76.5" width="288" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="AlH-xY-PNN"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="rateButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jAO-zs-T2f"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -58,6 +74,8 @@
                 <outlet property="anecdoteLabel" destination="V6M-F1-sno" id="DuB-Wj-PaR"/>
                 <outlet property="authorLabel" destination="Xfg-za-rYt" id="Pqo-2a-AEo"/>
                 <outlet property="creationDateLabel" destination="SPL-95-6g0" id="G3e-k1-F7d"/>
+                <outlet property="rateButton" destination="lWk-ya-Uyj" id="9kp-Tc-Siz"/>
+                <outlet property="ratingsLabel" destination="5y8-8o-uu1" id="ZST-MS-QPL"/>
             </connections>
             <point key="canvasLocation" x="139" y="89"/>
         </tableViewCell>

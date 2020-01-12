@@ -12,4 +12,8 @@ extension String {
 	init(float: Float, precision: Int) {
 		self.init(format: "%.\(precision)f", float)
 	}
+	
+	init(double: Double, precision: Int) {
+		self.init(format: "%.\(precision)f", double)
+	}
 }

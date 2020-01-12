@@ -35,6 +35,37 @@ final class AnecdotesViewController: TableViewController {
 		tableView.register(cellType: AnecdoteTableViewCell.self)
 	}
 	
+	// MARK: - Private
+	private func showRateSheetFor(anecdote: Anecdote) {
+		let actionSheet = UIAlertController(
+			title: "Избери оценка",
+			message: nil,
+			preferredStyle: .actionSheet
+		)
+		
+		(1...5).forEach { rating in
+			actionSheet.addAction(
+				UIAlertAction(
+					title: "\(rating)",
+					style: .default,
+					handler: { [weak self, weak anecdote] _ in
+						anecdote?.add(newRating: rating)
+						self?.tableView.reloadData()
+				})
+			)
+		}
+		
+		actionSheet.addAction(
+			UIAlertAction(
+				title: "Откажи",
+				style: .cancel,
+				handler: nil
+			)
+		)
+		
+		present(actionSheet, animated: true, completion: nil)
+	}
+	
 	// MARK: - UITableViewDataSource
 	override func tableView(
 		_ tableView: UITableView,
@@ -48,6 +79,7 @@ final class AnecdotesViewController: TableViewController {
 		cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
 		let cell = tableView.dequeueReusableCell() as AnecdoteTableViewCell
+		cell.delegate = self
 		cell.selectionStyle = .none
 		
 		if let anecdote = anecdotes[safe: indexPath.row] {
@@ -55,5 +87,18 @@ final class AnecdotesViewController: TableViewController {
 		}
 		
 		return cell
+	}
+}
+
+extension AnecdotesViewController: AnecdoteTableViewCellDelegate {
+	func anecdoteTableViewCellDidTapRateButton(_ cell: AnecdoteTableViewCell) {
+		guard
+			let indexPath = tableView.indexPath(for: cell),
+			let anecdote = anecdotes[safe: indexPath.row]
+			else {
+				return
+		}
+		
+		showRateSheetFor(anecdote: anecdote)
 	}
 }
