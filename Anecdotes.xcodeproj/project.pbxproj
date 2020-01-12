@@ -14,6 +14,9 @@
 		85E57CC923CB9CB0009E541C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57CC823CB9CB0009E541C /* ViewController.swift */; };
 		85E57CCC23CB9CC5009E541C /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85E57CCA23CB9CC5009E541C /* LoadingViewController.xib */; };
 		85E57CCD23CB9CC5009E541C /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57CCB23CB9CC5009E541C /* LoadingViewController.swift */; };
+		85E57CD023CB9D9C009E541C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57CCF23CB9D9C009E541C /* DataManager.swift */; };
+		85E57CD323CB9DE3009E541C /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57CD223CB9DE3009E541C /* Closures.swift */; };
+		85E57CD623CB9E28009E541C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E57CD523CB9E28009E541C /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		85E57CC823CB9CB0009E541C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		85E57CCA23CB9CC5009E541C /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
 		85E57CCB23CB9CC5009E541C /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		85E57CCF23CB9D9C009E541C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		85E57CD223CB9DE3009E541C /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		85E57CD523CB9E28009E541C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		856E466C23CB8D6E005B1A3C /* Anecdotes */ = {
 			isa = PBXGroup;
 			children = (
+				85E57CD123CB9DD1009E541C /* Constants */,
+				85E57CCE23CB9D8D009E541C /* Managers */,
 				85E57CC523CB9C87009E541C /* ViewControllers */,
 				856E466D23CB8D6E005B1A3C /* AppDelegate.swift */,
 				856E466F23CB8D6E005B1A3C /* SceneDelegate.swift */,
@@ -73,6 +81,7 @@
 			children = (
 				85E57CC723CB9C9C009E541C /* Other */,
 				85E57CC623CB9C94009E541C /* Parents */,
+				85E57CD423CB9E17009E541C /* TabBars */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -92,6 +101,30 @@
 				85E57CCA23CB9CC5009E541C /* LoadingViewController.xib */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		85E57CCE23CB9D8D009E541C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				85E57CCF23CB9D9C009E541C /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		85E57CD123CB9DD1009E541C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				85E57CD223CB9DE3009E541C /* Closures.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		85E57CD423CB9E17009E541C /* TabBars */ = {
+			isa = PBXGroup;
+			children = (
+				85E57CD523CB9E28009E541C /* TabBarController.swift */,
+			);
+			path = TabBars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				85E57CC923CB9CB0009E541C /* ViewController.swift in Sources */,
+				85E57CD023CB9D9C009E541C /* DataManager.swift in Sources */,
 				856E466E23CB8D6E005B1A3C /* AppDelegate.swift in Sources */,
 				856E467023CB8D6E005B1A3C /* SceneDelegate.swift in Sources */,
+				85E57CD623CB9E28009E541C /* TabBarController.swift in Sources */,
 				85E57CCD23CB9CC5009E541C /* LoadingViewController.swift in Sources */,
+				85E57CD323CB9DE3009E541C /* Closures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
