@@ -10,18 +10,36 @@ import Foundation
 
 final class Anecdote {
 
-	let text: String = """
-На конкурс между мъже “Какво е смесено чувство” победил мъжът, който отговорил:
-- Това е, когато гледаш как твоята тъща лети в пропастта с твоята кола.
-"""
-	let author: String = "Неизвестен"
-	let creationDate: Date = .now
-	private(set) var rating: Double = 3.7
-	private(set) var ratingsCount: Int = 6
-	private var oldRating: Int? = 5
+	let text: String
+	let author: String
+	let creationDate: Date
+	private(set) var rating: Double
+	private(set) var ratingsCount: Int
+	private var myRating: Int?
 	
 	var isRated: Bool {
-		return oldRating != nil
+		return myRating != nil
+	}
+	
+	init?(rawModel: RawAnecdote) {
+		let text = rawModel.text
+		
+		guard
+			text.isEmpty == false,
+			let author = rawModel.author,
+			let creationDate = rawModel.creationDate,
+			let rating = rawModel.rating,
+			let ratingsCount = rawModel.ratingsCount
+			else {
+				return nil
+		}
+		
+		self.text = text
+		self.author = author
+		self.creationDate = creationDate
+		self.rating = rating
+		self.ratingsCount = ratingsCount
+		self.myRating = rawModel.myRating
 	}
 	
 	// MARK: - Public
@@ -33,8 +51,8 @@ final class Anecdote {
 		}
 		
 		let sumUpOldRatings = rating * Double(oldRatingsCount)
-		let ratingDifference = newRating - (oldRating ?? 0)
+		let ratingDifference = newRating - (myRating ?? 0)
 		rating = (sumUpOldRatings + Double(ratingDifference)) / Double(ratingsCount)
-		oldRating = newRating
+		myRating = newRating
 	}
 }

@@ -9,3 +9,4 @@
 import Foundation
 
 typealias VoidClosure = () -> Void
+typealias GetItemClosure<T> = (T) -> Void

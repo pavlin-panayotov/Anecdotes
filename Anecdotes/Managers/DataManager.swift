@@ -8,23 +8,29 @@
 
 import Foundation
 
-final class DataManager {
+final class DataManager: NSObject {
 	
 	static let shared = DataManager()
 	
-	private(set) var categories: [Category] = Array(repeating: Category(), count: 6)
+	private(set) var categories: [Category] = []
 	
-	private func loadData() {
+	private func loadData(completion: @escaping GetItemClosure<[Category]>) {
+		guard let parser = DataParser(fileName: "anecdotes") else {
+			completion([])
+			return
+		}
 		
+		parser.parse(completion: completion)
 	}
 	
 	// MARK: - Public
 	func loadData(completion: @escaping VoidClosure) {
 		DispatchQueue.global().async { [unowned self] in
-			self.loadData()
-			
-			DispatchQueue.main.async {
-				completion()
+			self.loadData() { categories in
+				DispatchQueue.main.async {
+					self.categories = categories
+					completion()
+				}
 			}
 		}
 	}

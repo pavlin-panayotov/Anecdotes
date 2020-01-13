@@ -10,10 +10,26 @@ import Foundation
 
 final class Category {
 	
-	let anecdotes: [Anecdote] = Array(repeating: Anecdote(), count: 11)
-	let name: String = "Категория"
+	private(set) var anecdotes: [Anecdote] = []
+	let name: String
+	private let id: String
 	
-	init() {
+	init?(rawModel: RawCategory) {
+		guard
+			let name = rawModel.name,
+			let id = rawModel.id
+			else {
+				return nil
+		}
 		
+		let anecdotes = rawModel.anecdotes.compactMap { Anecdote(rawModel: $0) }
+		
+		guard anecdotes.isEmpty == false else {
+			return nil
+		}
+		
+		self.anecdotes = anecdotes
+		self.name = name
+		self.id = id
 	}
 }
