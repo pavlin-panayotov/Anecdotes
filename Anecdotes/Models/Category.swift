@@ -46,7 +46,7 @@ extension Category: XmlRepresentable {
 		}
 		
 		let template = """
-	<category id="\(id)" name="\(name)">
+	<category id="\(id)" title="\(name)">
 \(anecdotesString)
 	</category>
 """

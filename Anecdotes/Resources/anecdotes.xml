@@ -1,20 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <categories>
-		<category id="lawyers-and-doctors" title="Адвокати и лекари">
-		<anecdote id="1241" author="Докторчето" creationDate="21-01-2010" rating="3.7" ratingsCount="5" myRating="1">
+	<category id="lawyers-and-doctors" title="Адвокати и лекари">
+		<anecdote id="ssdsd" author="Докторчето" creationDate="21-01-2010" rating="3.7" ratingsCount="5" myRating="1">
 Докторът ми вика:
 - Висок си 180 см. При този ръст трябва да си 80 – 85 кг., а ти си 100 кг, следователно трябва да свалиш 15 – 20 кг.
 А аз го питам:
 - А не е ли по-лесно да порасна с едни 20 см?
 		</anecdote>
-		<anecdote id="12" author="Пациентът" creationDate="21-01-2010" rating="3.7" ratingsCount="5" myRating="1">
+		<anecdote id="dassd" author="Пациентът" creationDate="21-01-2010" rating="3.5" ratingsCount="5" myRating="5">
 Полунощ е. Медицинската сестра буди някакъв болен пациент.
 - Какво има? - пита сънен той.
 - Много се извинявам, забравила съм да ви дам приспивателното...
 		</anecdote>
-		<anecdote id="1" author="Пациентът" creationDate="21-01-2010" rating="3.7" ratingsCount="5">
+		<anecdote id="qwert" author="Пациентът" creationDate="21-01-2017" rating="3.7" ratingsCount="5">
 - Кой пациент чакаше за превръзка?
 - Тръгна си човекът, раната му зарасна....
+		</anecdote>
+	</category>
+	<category id="mental-problems" title="Луди">
+		<anecdote id="dasqw" author="Пациентът" creationDate="21-02-2010" rating="5" ratingsCount="5">
+В лудницата:
+- Ти кой си?
+- Аз съм Наполеон.
+- Е, то тука всички сме генерали...
+- Ааа, не – аз съм коняк!
+		</anecdote>
+		<anecdote id="sadas" author="Пациентът" creationDate="21-02-2010" rating="1" ratingsCount="4">
+Психиатър пита пациент:
+- Как си, още ли си Наполеон?
+- Още.
+- Мога ли с нещо да ти помогна?
+- Можеш, жена ми се мисли за някаква Петрова, направи нещо!
+		</anecdote>
+		<anecdote id="fdlks" author="Пациентът" creationDate="25-02-2012" rating="1" ratingsCount="1">
+- Каква е разликата между лудия и невротика?
+- Ами лудият знае, че 2+2 е равно на 5, а невротикът знае, че 2+2 е равно на 4, но това му се струва непоносимо.
+		</anecdote>
+	</category>
+	<category id="family" title="Семейни">
+		<anecdote id="daspw" author="Пациентът" creationDate="21-02-2010" rating="5" ratingsCount="5">
+- Скъпа, два и половина през нощта е, а теб те няма в къщи!
+- Скъпи, и да бях в къщи, пак щеше да е два и половина...
+		</anecdote>
+		<anecdote id="sadqs" author="Пациентът" creationDate="21-02-2010" rating="2" ratingsCount="4">
+- Вярно ли е, че си се развел с жена си, а после си се оженил за балдъзата?!
+- Вярно е.
+- Защо, бе човек?!
+- Свикнах с тъщата...
+		</anecdote>
+		<anecdote id="fdlms" author="Пациентът" creationDate="25-02-2012" rating="1" ratingsCount="15">
+- Как кръстихте бебето?
+- Алое... на баба си Вера.
+		</anecdote>
+		<anecdote id="sakqs" author="Пациентът" creationDate="21-02-2010" rating="1.7" ratingsCount="4">
+Баща се кара на сина си студент:
+- Непрекъснато ходиш насам-натам с момичета, а за учението не мислиш!
+- Ама, тате...
+- Ш-ш-ш-т, да мълчиш! Кой е бащата тук? Ти или аз?
+- И двамата, тате, и двамата...
+		</anecdote>
+		<anecdote id="ldlms" author="Пациентът" creationDate="25-02-2012" rating="4.3" ratingsCount="7">
+Баща се кара на сина си студент:
+- Непрекъснато ходиш насам-натам с момичета, а за учението не мислиш!
+- Ама, тате...
+- Ш-ш-ш-т, да мълчиш! Кой е бащата тук? Ти или аз?
+- И двамата, тате, и двамата...
 		</anecdote>
 	</category>
 </categories>
