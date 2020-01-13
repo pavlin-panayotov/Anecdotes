@@ -11,6 +11,20 @@ import UIKit
 final class HomeViewController: TableViewController {
 	
 	private let anecdote = DataManager.shared.categories.first?.anecdotes.first
+	private let tableHeaderView: UIView = {
+		let view = UIView()
+		let label = UILabel()
+		label.textAlignment = .center
+		label.text = "Анекдот на деня"
+		view.addFullSizedSubview(
+			label,
+			topPadding: 10,
+			trailingPadding: 20,
+			bottomPadding: 30,
+			leadingPadding: 20
+		)
+		return view
+	}()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -23,6 +37,8 @@ final class HomeViewController: TableViewController {
 		super.setupTableView()
 		
 		tableView.register(cellType: AnecdoteTableViewCell.self)
+		tableView.tableHeaderView = tableHeaderView
+		tableView.tableHeaderView?.frame.size.height = 60
 	}
 	
 	// MARK: - UITableViewDataSource
