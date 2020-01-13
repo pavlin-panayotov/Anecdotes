@@ -11,6 +11,7 @@ import Foundation
 final class RawAnecdote: RawXmlObjectProtocol {
 	
 	var text = ""
+	let id: String?
 	let author: String?
 	let creationDate: Date?
 	let rating: Double?
@@ -18,6 +19,7 @@ final class RawAnecdote: RawXmlObjectProtocol {
 	let myRating: Int?
 	
 	init(attributeDict: [String: String]) {
+		id = attributeDict["id"]
 		author = attributeDict["author"]
 		creationDate = Self.parseDateFrom(dict: attributeDict, for: "creationDate")
 		rating = Self.parseDoubleFrom(dict: attributeDict, for: "rating")

@@ -33,3 +33,24 @@ final class Category {
 		self.id = id
 	}
 }
+
+// MARK: - XmlRepresentable
+extension Category: XmlRepresentable {
+	var xmlString: String {
+		let anecdotesString = anecdotes.reduce(into: "") { (result, anecdote) in
+			if result.isEmpty {
+				result = anecdote.xmlString
+			} else {
+				result += "\n\(anecdote.xmlString)"
+			}
+		}
+		
+		let template = """
+	<category id="\(id)" name="\(name)">
+\(anecdotesString)
+	</category>
+"""
+		
+		return template
+	}
+}

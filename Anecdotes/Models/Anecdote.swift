@@ -9,8 +9,9 @@
 import Foundation
 
 final class Anecdote {
-
+	
 	let text: String
+	let id: String
 	let author: String
 	let creationDate: Date
 	private(set) var rating: Double
@@ -26,6 +27,7 @@ final class Anecdote {
 		
 		guard
 			text.isEmpty == false,
+			let id = rawModel.id,
 			let author = rawModel.author,
 			let creationDate = rawModel.creationDate,
 			let rating = rawModel.rating,
@@ -35,6 +37,7 @@ final class Anecdote {
 		}
 		
 		self.text = text
+		self.id = id
 		self.author = author
 		self.creationDate = creationDate
 		self.rating = rating
@@ -54,5 +57,26 @@ final class Anecdote {
 		let ratingDifference = newRating - (myRating ?? 0)
 		rating = (sumUpOldRatings + Double(ratingDifference)) / Double(ratingsCount)
 		myRating = newRating
+	}
+}
+
+// MARK: - XmlRepresentable
+extension Anecdote: XmlRepresentable {
+	var xmlString: String {
+		let myRatingString = { () -> String in
+			guard let myRating = myRating else {
+				return ""
+			}
+			
+			return " myRating=\"\(myRating)\""
+		}()
+		
+		let template = """
+		<anecdote id="\(id)" author="\(author)" creationDate="\(DateFormatterManager.shared.responseDateFormatter.string(from: creationDate))" rating="\(String(double: rating, precision: 2))" ratingsCount="\(ratingsCount)"\(myRatingString)>
+\(text)
+		</anecdote>
+"""
+		
+		return template
 	}
 }

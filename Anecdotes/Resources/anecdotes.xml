@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <categories>
 		<category id="lawyers-and-doctors" title="Адвокати и лекари">
-		<anecdote author="Неизвестен" creationDate="01-01-1970" rating="3.7" ratingsCount="5" myRating="1">
+		<anecdote id="1241" author="Докторчето" creationDate="21-01-2010" rating="3.7" ratingsCount="5" myRating="1">
 Докторът ми вика:
 - Висок си 180 см. При този ръст трябва да си 80 – 85 кг., а ти си 100 кг, следователно трябва да свалиш 15 – 20 кг.
 А аз го питам:
 - А не е ли по-лесно да порасна с едни 20 см?
+		</anecdote>
+		<anecdote id="12" author="Пациентът" creationDate="21-01-2010" rating="3.7" ratingsCount="5" myRating="1">
+Полунощ е. Медицинската сестра буди някакъв болен пациент.
+- Какво има? - пита сънен той.
+- Много се извинявам, забравила съм да ви дам приспивателното...
+		</anecdote>
+		<anecdote id="1" author="Пациентът" creationDate="21-01-2010" rating="3.7" ratingsCount="5">
+- Кой пациент чакаше за превръзка?
+- Тръгна си човекът, раната му зарасна....
 		</anecdote>
 	</category>
 </categories>

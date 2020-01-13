@@ -15,16 +15,12 @@ final class DataParser: NSObject, XMLParserDelegate {
 	private var parsingData: [RawXmlObjectProtocol] = []
 	private var completion: GetItemClosure<[Category]>?
 	
-	init?(fileName: String) {
-		guard
-			let path = Bundle.main.path(forResource: "anecdotes", ofType: "xml"),
-			let xmlString = try? String(contentsOfFile: path, encoding: .utf8),
-			let xmlData = xmlString.data(using: .utf8)
-			else {
-				return nil
+	init?(fileUrl: URL) {
+		guard let xmlParser = XMLParser(contentsOf: fileUrl) else {
+			return nil
 		}
 		
-		self.xmlParser = XMLParser(data: xmlData)
+		self.xmlParser = xmlParser
 		
 		super.init()
 		

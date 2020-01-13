@@ -31,6 +31,7 @@ final class NavigationManager {
 					style: .default,
 					handler: { [weak anecdote] _ in
 						anecdote?.add(newRating: rating)
+						DataManager.shared.saveCategories()
 						completion()
 				})
 			)

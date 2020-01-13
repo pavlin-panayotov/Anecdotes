@@ -12,6 +12,7 @@
 		85458A5623CCD85A0050E13D /* RawCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85458A5523CCD85A0050E13D /* RawCategory.swift */; };
 		85458A5823CCD8680050E13D /* RawAnecdote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85458A5723CCD8680050E13D /* RawAnecdote.swift */; };
 		85458A5B23CCDA490050E13D /* RawXmlObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85458A5A23CCDA490050E13D /* RawXmlObjectProtocol.swift */; };
+		85458A5D23CCFF080050E13D /* XmlRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85458A5C23CCFF080050E13D /* XmlRepresentable.swift */; };
 		856E466E23CB8D6E005B1A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E466D23CB8D6E005B1A3C /* AppDelegate.swift */; };
 		856E467023CB8D6E005B1A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E466F23CB8D6E005B1A3C /* SceneDelegate.swift */; };
 		856E467723CB8D70005B1A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856E467623CB8D70005B1A3C /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		85458A5523CCD85A0050E13D /* RawCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawCategory.swift; sourceTree = "<group>"; };
 		85458A5723CCD8680050E13D /* RawAnecdote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawAnecdote.swift; sourceTree = "<group>"; };
 		85458A5A23CCDA490050E13D /* RawXmlObjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawXmlObjectProtocol.swift; sourceTree = "<group>"; };
+		85458A5C23CCFF080050E13D /* XmlRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlRepresentable.swift; sourceTree = "<group>"; };
 		856E466A23CB8D6E005B1A3C /* Anecdotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anecdotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		856E466D23CB8D6E005B1A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		856E466F23CB8D6E005B1A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				85458A5A23CCDA490050E13D /* RawXmlObjectProtocol.swift */,
+				85458A5C23CCFF080050E13D /* XmlRepresentable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				85E57D0923CB9F61009E541C /* String+Inits.swift in Sources */,
 				85E57D0123CB9F61009E541C /* NSLayoutConstraint+Activate.swift in Sources */,
 				85E57D2223CBB1CD009E541C /* AnecdoteTableViewCell.swift in Sources */,
+				85458A5D23CCFF080050E13D /* XmlRepresentable.swift in Sources */,
 				85E57D0B23CB9F89009E541C /* Constant.swift in Sources */,
 				85E57CFD23CB9F61009E541C /* UIView+Subviews.swift in Sources */,
 				85458A5823CCD8680050E13D /* RawAnecdote.swift in Sources */,
