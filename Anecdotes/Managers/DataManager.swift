@@ -24,6 +24,24 @@ final class DataManager {
 		return url.appendingPathComponent(fileName)
 	}
 	
+	var dailyAnecdote: Anecdote? {
+		let dateComponents = Calendar(identifier: .gregorian).dateComponents(
+			in: TimeZone.current,
+			from: .now
+		)
+		
+		guard
+			let day = dateComponents.day,
+			let month = dateComponents.month,
+			let category = categories[safe: (day/2 + month) % categories.count],
+			let anecdote = category.anecdotes[safe: (day/2 + month) % category.anecdotes.count]
+			else {
+				return nil
+		}
+		
+		return anecdote
+	}
+	
 	init() {
 		createFileOnDevice()
 	}

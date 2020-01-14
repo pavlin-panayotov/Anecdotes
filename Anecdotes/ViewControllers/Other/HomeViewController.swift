@@ -10,7 +10,7 @@ import UIKit
 
 final class HomeViewController: TableViewController {
 	
-	private let anecdote = DataManager.shared.categories.first?.anecdotes.first
+	private let anecdote = DataManager.shared.dailyAnecdote
 	private let tableHeaderView: UIView = {
 		let view = UIView()
 		let label = UILabel()
