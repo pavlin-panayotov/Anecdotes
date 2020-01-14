@@ -16,7 +16,7 @@ final class Anecdote {
 	let creationDate: Date
 	private(set) var rating: Double
 	private(set) var ratingsCount: Int
-	private var myRating: Int?
+	private(set) var myRating: Int?
 	
 	var isRated: Bool {
 		return myRating != nil

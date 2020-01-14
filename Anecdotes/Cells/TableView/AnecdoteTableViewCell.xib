@@ -20,13 +20,13 @@
                         <rect key="frame" x="16" y="11" width="288" height="278"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6M-F1-sno">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="154.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="134"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="80T-Ux-v5r">
-                                <rect key="frame" x="0.0" y="172.5" width="288" height="105.5"/>
+                                <rect key="frame" x="0.0" y="152" width="288" height="126"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfg-za-rYt">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
@@ -46,8 +46,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TD-yI-71r">
+                                        <rect key="frame" x="0.0" y="61.5" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWk-ya-Uyj">
-                                        <rect key="frame" x="0.0" y="61.5" width="288" height="44"/>
+                                        <rect key="frame" x="0.0" y="82" width="288" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="AlH-xY-PNN"/>
                                         </constraints>
@@ -74,6 +80,7 @@
                 <outlet property="anecdoteLabel" destination="V6M-F1-sno" id="DuB-Wj-PaR"/>
                 <outlet property="authorLabel" destination="Xfg-za-rYt" id="Pqo-2a-AEo"/>
                 <outlet property="creationDateLabel" destination="SPL-95-6g0" id="G3e-k1-F7d"/>
+                <outlet property="myRatingLabel" destination="5TD-yI-71r" id="Ptw-QX-oHF"/>
                 <outlet property="rateButton" destination="lWk-ya-Uyj" id="9kp-Tc-Siz"/>
                 <outlet property="ratingsLabel" destination="5y8-8o-uu1" id="ZST-MS-QPL"/>
             </connections>

@@ -18,6 +18,7 @@ final class AnecdoteTableViewCell: TableViewCell {
 	@IBOutlet private weak var authorLabel: UILabel!
 	@IBOutlet private weak var creationDateLabel: UILabel!
 	@IBOutlet private weak var ratingsLabel: UILabel!
+	@IBOutlet private weak var myRatingLabel: UILabel!
 	@IBOutlet private weak var rateButton: UIButton!
 	
 	weak var delegate: AnecdoteTableViewCellDelegate?
@@ -44,12 +45,21 @@ final class AnecdoteTableViewCell: TableViewCell {
 		author: String,
 		creationDate: Date,
 		rating: Double,
-		ratingsCount: Int) {
+		ratingsCount: Int,
+		myRating: Int?) {
 		
 		anecdoteLabel.text = text
 		authorLabel.text = "Автор: \(author)"
 		creationDateLabel.text = "Дата на създаване: \(formatDate(creationDate))"
 		ratingsLabel.text = "Оценка \(String(double: rating, precision: 2)) (\(ratingsCount))"
+		myRatingLabel.text = {
+			guard let myRating = myRating else {
+				return nil
+			}
+			
+			return "Моята оценка: \(myRating)"
+		}()
+		myRatingLabel.isHidden = myRatingLabel.text == nil
 	}
 }
 
@@ -61,7 +71,8 @@ extension AnecdoteTableViewCell {
 			author: anecdote.author,
 			creationDate: anecdote.creationDate,
 			rating: anecdote.rating,
-			ratingsCount: anecdote.ratingsCount
+			ratingsCount: anecdote.ratingsCount,
+			myRating: anecdote.myRating
 		)
 	}
 }
