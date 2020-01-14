@@ -45,6 +45,12 @@ final class CategoriesViewController: TableViewController {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		tableView.reloadData()
+	}
+	
 	// MARK: - Overrides
 	override func setupTableView() {
 		super.setupTableView()

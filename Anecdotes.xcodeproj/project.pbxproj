@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8519E4D923CE62C50079410D /* CreateAnecdoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519E4D823CE62C50079410D /* CreateAnecdoteViewController.swift */; };
+		8519E4DC23CE63020079410D /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519E4DA23CE63020079410D /* ScrollViewController.swift */; };
+		8519E4DD23CE63020079410D /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8519E4DB23CE63020079410D /* ScrollViewController.xib */; };
+		8519E4E423CE665B0079410D /* Dropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519E4E223CE665A0079410D /* Dropdown.swift */; };
+		8519E4E523CE665B0079410D /* Dropdown.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8519E4E323CE665B0079410D /* Dropdown.xib */; };
+		8519E4E723CE66670079410D /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8519E4E623CE66670079410D /* NibView.swift */; };
 		85458A4E23CCC1ED0050E13D /* anecdotes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 85458A4D23CCC1ED0050E13D /* anecdotes.xml */; };
 		85458A5123CCC4770050E13D /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85458A5023CCC4770050E13D /* DataParser.swift */; };
 		85458A5623CCD85A0050E13D /* RawCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85458A5523CCD85A0050E13D /* RawCategory.swift */; };
@@ -60,6 +66,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8519E4D823CE62C50079410D /* CreateAnecdoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnecdoteViewController.swift; sourceTree = "<group>"; };
+		8519E4DA23CE63020079410D /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		8519E4DB23CE63020079410D /* ScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
+		8519E4E223CE665A0079410D /* Dropdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dropdown.swift; sourceTree = "<group>"; };
+		8519E4E323CE665B0079410D /* Dropdown.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dropdown.xib; sourceTree = "<group>"; };
+		8519E4E623CE66670079410D /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		85458A4D23CCC1ED0050E13D /* anecdotes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = anecdotes.xml; sourceTree = "<group>"; };
 		85458A5023CCC4770050E13D /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		85458A5523CCD85A0050E13D /* RawCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawCategory.swift; sourceTree = "<group>"; };
@@ -125,6 +137,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8519E4DE23CE66380079410D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8519E4E123CE66520079410D /* Other */,
+				8519E4E023CE664B0079410D /* Parents */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8519E4E023CE664B0079410D /* Parents */ = {
+			isa = PBXGroup;
+			children = (
+				8519E4E623CE66670079410D /* NibView.swift */,
+			);
+			path = Parents;
+			sourceTree = "<group>";
+		};
+		8519E4E123CE66520079410D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8519E4E223CE665A0079410D /* Dropdown.swift */,
+				8519E4E323CE665B0079410D /* Dropdown.xib */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		85458A4C23CCC1D80050E13D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,20 +216,21 @@
 		856E466C23CB8D6E005B1A3C /* Anecdotes */ = {
 			isa = PBXGroup;
 			children = (
-				856E467B23CB8D70005B1A3C /* Info.plist */,
 				856E466D23CB8D6E005B1A3C /* AppDelegate.swift */,
-				856E466F23CB8D6E005B1A3C /* SceneDelegate.swift */,
 				856E467623CB8D70005B1A3C /* Assets.xcassets */,
 				85E57CDD23CB9F20009E541C /* Cells */,
 				85E57CD123CB9DD1009E541C /* Constants */,
 				85E57CE523CB9F61009E541C /* Extensions */,
+				856E467B23CB8D70005B1A3C /* Info.plist */,
 				856E467823CB8D70005B1A3C /* LaunchScreen.storyboard */,
 				85E57CCE23CB9D8D009E541C /* Managers */,
 				85E57D1523CBABDD009E541C /* Models */,
 				85458A4F23CCC3A20050E13D /* Objects */,
 				85458A5923CCDA320050E13D /* Protocols */,
 				85458A4C23CCC1D80050E13D /* Resources */,
+				856E466F23CB8D6E005B1A3C /* SceneDelegate.swift */,
 				85E57CC523CB9C87009E541C /* ViewControllers */,
+				8519E4DE23CE66380079410D /* Views */,
 			);
 			path = Anecdotes;
 			sourceTree = "<group>";
@@ -210,6 +249,8 @@
 		85E57CC623CB9C94009E541C /* Parents */ = {
 			isa = PBXGroup;
 			children = (
+				8519E4DA23CE63020079410D /* ScrollViewController.swift */,
+				8519E4DB23CE63020079410D /* ScrollViewController.xib */,
 				85E57CD923CB9F0A009E541C /* TableViewController.swift */,
 				85E57CDA23CB9F0A009E541C /* TableViewController.xib */,
 				85E57CC823CB9CB0009E541C /* ViewController.swift */,
@@ -223,6 +264,7 @@
 				85E57CD723CB9EF8009E541C /* AboutUsViewController.swift */,
 				85E57D1E23CBB087009E541C /* AnecdotesViewController.swift */,
 				85E57D1123CBA1BA009E541C /* CategoriesViewController.swift */,
+				8519E4D823CE62C50079410D /* CreateAnecdoteViewController.swift */,
 				85E57D0F23CBA0C5009E541C /* HomeViewController.swift */,
 				85E57CCB23CB9CC5009E541C /* LoadingViewController.swift */,
 				85E57CCA23CB9CC5009E541C /* LoadingViewController.xib */,
@@ -429,7 +471,9 @@
 				85E57D1C23CBAE76009E541C /* CategoryTableViewCell.xib in Resources */,
 				85458A4E23CCC1ED0050E13D /* anecdotes.xml in Resources */,
 				85E57CCC23CB9CC5009E541C /* LoadingViewController.xib in Resources */,
+				8519E4E523CE665B0079410D /* Dropdown.xib in Resources */,
 				856E467A23CB8D70005B1A3C /* LaunchScreen.storyboard in Resources */,
+				8519E4DD23CE63020079410D /* ScrollViewController.xib in Resources */,
 				856E467723CB8D70005B1A3C /* Assets.xcassets in Resources */,
 				85E57D2323CBB1CD009E541C /* AnecdoteTableViewCell.xib in Resources */,
 				85E57CDC23CB9F0A009E541C /* TableViewController.xib in Resources */,
@@ -450,6 +494,7 @@
 				85E57CD823CB9EF8009E541C /* AboutUsViewController.swift in Sources */,
 				85458A5123CCC4770050E13D /* DataParser.swift in Sources */,
 				85E57D1723CBAC04009E541C /* Category.swift in Sources */,
+				8519E4DC23CE63020079410D /* ScrollViewController.swift in Sources */,
 				85E57CFC23CB9F61009E541C /* UIView+Extension.swift in Sources */,
 				85E57CC923CB9CB0009E541C /* ViewController.swift in Sources */,
 				85E57D0E23CBA014009E541C /* NavigationController.swift in Sources */,
@@ -465,10 +510,12 @@
 				85E57D0023CB9F61009E541C /* UIEdgeInsets+Inits.swift in Sources */,
 				85E57D1223CBA1BA009E541C /* CategoriesViewController.swift in Sources */,
 				85E57CD623CB9E28009E541C /* TabBarController.swift in Sources */,
+				8519E4D923CE62C50079410D /* CreateAnecdoteViewController.swift in Sources */,
 				85E57D0223CB9F61009E541C /* NSLayoutConstraint+Deactivate.swift in Sources */,
 				85E57CE423CB9F44009E541C /* TableViewCell.swift in Sources */,
 				85E57D0423CB9F61009E541C /* UITableView+Footer.swift in Sources */,
 				85458A5B23CCDA490050E13D /* RawXmlObjectProtocol.swift in Sources */,
+				8519E4E423CE665B0079410D /* Dropdown.swift in Sources */,
 				85E57D1D23CBAE76009E541C /* CategoryTableViewCell.swift in Sources */,
 				85E57CE123CB9F3E009E541C /* DetailsTableViewCell.swift in Sources */,
 				85E57D1023CBA0C5009E541C /* HomeViewController.swift in Sources */,
@@ -482,6 +529,7 @@
 				85E57CCD23CB9CC5009E541C /* LoadingViewController.swift in Sources */,
 				85E57CFE23CB9F61009E541C /* UITableViewCell+Id.swift in Sources */,
 				85E57CDB23CB9F0A009E541C /* TableViewController.swift in Sources */,
+				8519E4E723CE66670079410D /* NibView.swift in Sources */,
 				85E57CD323CB9DE3009E541C /* Closures.swift in Sources */,
 				85E57D0723CB9F61009E541C /* RawRepresentable+Inits.swift in Sources */,
 				85E57D1F23CBB087009E541C /* AnecdotesViewController.swift in Sources */,

@@ -32,6 +32,11 @@ final class Category {
 		self.name = name
 		self.id = id
 	}
+	
+	// MARK: - Public
+	func append(anecdote: Anecdote) {
+		anecdotes.append(anecdote)
+	}
 }
 
 // MARK: - XmlRepresentable

@@ -28,6 +28,12 @@ final class AnecdotesViewController: TableViewController {
 		title = anecdotes.isEmpty ? "Анекдот" : "Анекдоти"
 	}
 	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		tableView.reloadData()
+	}
+	
 	// MARK: - Overrides
 	override func setupTableView() {
 		super.setupTableView()

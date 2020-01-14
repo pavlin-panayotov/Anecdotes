@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Dropdown">
+            <connections>
+                <outlet property="contentStackView" destination="Hlv-OH-FKk" id="yJp-rj-JP7"/>
+                <outlet property="textField" destination="TBo-uL-3An" id="Hkf-7R-onJ"/>
+                <outlet property="titleLabel" destination="Eir-RF-rH9" id="n2f-mR-Rhw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hlv-OH-FKk">
+                    <rect key="frame" x="20" y="44" width="374" height="256"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eir-RF-rH9">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TBo-uL-3An">
+                            <rect key="frame" x="0.0" y="20.5" width="374" height="235.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottomMargin" secondItem="Hlv-OH-FKk" secondAttribute="bottom" id="Qhp-qz-F1c"/>
+                <constraint firstAttribute="trailingMargin" secondItem="Hlv-OH-FKk" secondAttribute="trailing" id="Tfp-N1-zjZ"/>
+                <constraint firstItem="Hlv-OH-FKk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="eXA-Bh-kNW"/>
+                <constraint firstItem="Hlv-OH-FKk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="zQp-g1-Q4d"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+            <point key="canvasLocation" x="139" y="98"/>
+        </view>
+    </objects>
+</document>

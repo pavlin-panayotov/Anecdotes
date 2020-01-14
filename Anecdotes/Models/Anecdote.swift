@@ -45,6 +45,15 @@ final class Anecdote {
 		self.myRating = rawModel.myRating
 	}
 	
+	init(text: String, author: String) {
+		self.text = text
+		self.id = "A\(author)\(Int(Date.now.timeIntervalSince1970))"
+		self.author = author
+		self.creationDate = .now
+		self.rating = 0
+		self.ratingsCount = 0
+	}
+	
 	// MARK: - Public
 	func add(newRating: Int) {
 		let oldRatingsCount = ratingsCount

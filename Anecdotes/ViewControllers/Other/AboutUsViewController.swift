@@ -13,6 +13,7 @@ final class AboutUsViewController: TableViewController {
 	private enum Row {
 		case dataSource
 		case appSource
+		case newAnecdote
 		case version
 		
 		var title: String {
@@ -21,6 +22,8 @@ final class AboutUsViewController: TableViewController {
 				return "Източник на информацията"
 			case .appSource:
 				return "Източник на приложението"
+			case .newAnecdote:
+				return "Добави анекдот"
 			case .version:
 				return "Версия"
 			}
@@ -28,7 +31,7 @@ final class AboutUsViewController: TableViewController {
 		
 		var value: String? {
 			switch self {
-			case .dataSource, .appSource:
+			case .dataSource, .appSource, .newAnecdote:
 				return nil
 			case .version:
 				return "1.0"
@@ -37,7 +40,7 @@ final class AboutUsViewController: TableViewController {
 		
 		var cellSelectionStyle: UITableViewCell.SelectionStyle {
 			switch self {
-			case .dataSource, .appSource:
+			case .dataSource, .appSource, .newAnecdote:
 				return .default
 			case .version:
 				return .none
@@ -46,7 +49,7 @@ final class AboutUsViewController: TableViewController {
 		
 		var textsAlignment: NSTextAlignment {
 			switch self {
-			case .dataSource, .appSource:
+			case .dataSource, .appSource, .newAnecdote:
 				return .left
 			case .version:
 				return .center
@@ -57,6 +60,7 @@ final class AboutUsViewController: TableViewController {
 	private let dataSource: [Row] = [
 		.dataSource,
 		.appSource,
+		.newAnecdote,
 		.version,
 	]
 	
@@ -127,6 +131,12 @@ final class AboutUsViewController: TableViewController {
 				Constant.Url.appSource,
 				options: [:],
 				completionHandler: nil
+			)
+			
+		case .newAnecdote:
+			navigationController?.pushViewController(
+				CreateAnecdoteViewController(),
+				animated: true
 			)
 			
 		case .version:
