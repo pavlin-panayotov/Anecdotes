@@ -77,7 +77,10 @@ final class CategoriesViewController: TableViewController {
 		
 		let randomAnecdote = randomCategory.anecdotes[Int.random(in: 0..<randomCategory.anecdotes.count)]
 		navigationController?.pushViewController(
-			AnecdotesViewController(anecdotes: [randomAnecdote]),
+			AnecdotesViewController(
+				anecdotes: [randomAnecdote],
+				title: randomCategory.name
+			),
 			animated: true
 		)
 	}
@@ -115,7 +118,10 @@ final class CategoriesViewController: TableViewController {
 		}
 		
 		navigationController?.pushViewController(
-			AnecdotesViewController(anecdotes: category.anecdotes),
+			AnecdotesViewController(
+				anecdotes: category.anecdotes,
+				title: category.name
+			),
 			animated: true
 		)
 	}

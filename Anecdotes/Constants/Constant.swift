@@ -13,4 +13,8 @@ struct Constant {
 		static let dataSource = URL(string: "https://www.vesti.bg/vicove")!
 		static let appSource = URL(string: "https://github.com/pavlin-panayotov/Anecdotes")!
 	}
+	
+	struct Config {
+		static let ratingsRange = 1...5
+	}
 }

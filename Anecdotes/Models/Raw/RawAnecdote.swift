@@ -10,6 +10,7 @@ import Foundation
 
 final class RawAnecdote: RawXmlObjectProtocol {
 	
+	/// **Note**: Text may contain leading or trailing new lines. Better trim before usage.
 	var text = ""
 	let id: String?
 	let author: String?

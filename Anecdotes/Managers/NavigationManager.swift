@@ -24,7 +24,7 @@ final class NavigationManager {
 			preferredStyle: .actionSheet
 		)
 		
-		(1...5).forEach { rating in
+		Constant.Config.ratingsRange.forEach { rating in
 			actionSheet.addAction(
 				UIAlertAction(
 					title: "\(rating)",

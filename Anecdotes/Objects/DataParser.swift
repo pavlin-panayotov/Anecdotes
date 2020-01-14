@@ -87,16 +87,10 @@ extension DataParser {
 	}
 	
 	func parser(_ parser: XMLParser, foundCharacters string: String) {
-		let trimmedString = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-		
-		guard trimmedString.isEmpty == false else {
-			return
-		}
-		
 		let element = parsingData.last
 		
 		if let anecdote = element as? RawAnecdote {
-			anecdote.text += trimmedString
+			anecdote.text += string
 		}
 	}
 	

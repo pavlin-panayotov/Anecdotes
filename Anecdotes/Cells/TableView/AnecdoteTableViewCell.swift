@@ -48,10 +48,12 @@ final class AnecdoteTableViewCell: TableViewCell {
 		ratingsCount: Int,
 		myRating: Int?) {
 		
+		let maxRating = "\(Constant.Config.ratingsRange.upperBound)"
+		
 		anecdoteLabel.text = text
 		authorLabel.text = "Автор: \(author)"
 		creationDateLabel.text = "Дата на създаване: \(formatDate(creationDate))"
-		ratingsLabel.text = "Оценка \(String(double: rating, precision: 2)) (\(ratingsCount))"
+		ratingsLabel.text = "Оценка \(String(double: rating, precision: 2))/\(maxRating) (\(ratingsCount))"
 		myRatingLabel.text = {
 			guard let myRating = myRating else {
 				return nil

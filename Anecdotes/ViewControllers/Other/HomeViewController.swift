@@ -20,7 +20,7 @@ final class HomeViewController: TableViewController {
 			label,
 			topPadding: 10,
 			trailingPadding: 20,
-			bottomPadding: 30,
+			bottomPadding: 10,
 			leadingPadding: 20
 		)
 		return view
@@ -38,7 +38,7 @@ final class HomeViewController: TableViewController {
 		
 		tableView.register(cellType: AnecdoteTableViewCell.self)
 		tableView.tableHeaderView = tableHeaderView
-		tableView.tableHeaderView?.frame.size.height = 60
+		tableView.tableHeaderView?.frame.size.height = 40
 	}
 	
 	// MARK: - UITableViewDataSource

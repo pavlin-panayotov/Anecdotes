@@ -12,10 +12,18 @@ final class AnecdotesViewController: TableViewController {
 	
 	private let anecdotes: [Anecdote]
 	
-	init(anecdotes: [Anecdote]) {
+	init(anecdotes: [Anecdote], title: String? = nil) {
 		self.anecdotes = anecdotes
 		
 		super.init()
+		
+		self.title = {
+			if let title = title, title.isEmpty == false {
+				return title
+			}
+			
+			return anecdotes.count > 1 ? "Анекдоти" : "Анекдот"
+		}()
 	}
 	
 	required init?(coder: NSCoder) {
@@ -25,7 +33,7 @@ final class AnecdotesViewController: TableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		title = anecdotes.isEmpty ? "Анекдот" : "Анекдоти"
+		
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {

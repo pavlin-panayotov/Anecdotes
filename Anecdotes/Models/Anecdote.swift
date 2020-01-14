@@ -23,7 +23,7 @@ final class Anecdote {
 	}
 	
 	init?(rawModel: RawAnecdote) {
-		let text = rawModel.text
+		let text = rawModel.text.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
 		
 		guard
 			text.isEmpty == false,
